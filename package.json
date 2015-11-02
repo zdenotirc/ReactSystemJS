@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "devDependencies": {
+    "jspm": "^0.16.12"
+  },
+  "jspm": {
+    "dependencies": {
+      "react": "npm:react@^0.14.1",
+      "react-dom": "npm:react-dom@^0.14.1",
+      "ts": "github:frankwallis/plugin-typescript@^2.1.5"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
+}

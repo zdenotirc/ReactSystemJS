@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "target": "ES6",
+        "sourceMap": true,
+        "jsx": "react"
+    },
+    "files": [
+        "./app/main.tsx",
+        "./typings/tsd.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "bower_components",
+        "jspm_packages"
+    ]
+}
