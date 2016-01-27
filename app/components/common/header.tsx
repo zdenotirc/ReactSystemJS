@@ -1,6 +1,6 @@
 'use strict';
 
-import * as React from 'react'
+import * as React from 'react';
 import * as ReactDom from 'react-dom';
 
 class Header extends React.Component<any, any>{

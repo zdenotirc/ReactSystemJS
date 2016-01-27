@@ -1,18 +1,15 @@
 {
     "compilerOptions": {
         "module": "system",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
         "noImplicitAny": true,
-        "target": "ES6",
+        "target": "es5",
         "sourceMap": true,
         "jsx": "react"
     },
     "files": [
-        "./app/main.tsx",
-        "./typings/tsd.d.ts"
-    ],
-    "exclude": [
-        "node_modules",
-        "bower_components",
-        "jspm_packages"
+        "app/main.tsx",
+        "typings/tsd.d.ts"
     ]
 }

@@ -10,16 +10,75 @@
     "url": "https://github.com/zdenotirc/ReactSystemJS"
   },
   "devDependencies": {
-    "jspm": "^0.16.12"
+    "jspm": "^0.17.0-beta.5"
   },
   "jspm": {
     "dependencies": {
-      "react": "npm:react@^0.14.1",
-      "react-dom": "npm:react-dom@^0.14.1",
-      "ts": "github:frankwallis/plugin-typescript@^2.1.5"
+        "ts": "github:frankwallis/plugin-typescript@^2.5.3"
     },
-    "devDependencies": {
-      "typescript": "npm:typescript@^1.6.2"
+    "devDependencies": {},
+    "peerDependencies": {
+      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
+      "domain": "github:jspm/nodelibs-domain@^0.2.0-alpha",
+      "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
+      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
+      "module": "github:jspm/nodelibs-module@^0.2.0-alpha",
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+      "react": "npm:react@^0.14.6",
+      "react-dom": "npm:react-dom@^0.14.6",
+      "readline": "github:jspm/nodelibs-readline@^0.2.0-alpha",
+      "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
+      "typescript": "npm:typescript@^1.7.5",
+      "util": "github:jspm/nodelibs-util@^0.2.0-alpha"
+    },
+    "overrides": {
+      "npm:@reactivex/rxjs@5.0.0-alpha.4": {
+        "format": "cjs"
+      },
+      "npm:fbjs@0.6.1": {
+        "dependencies": {}
+      },
+      "npm:inherits@2.0.1": {
+        "ignore": [
+          "test.js"
+        ]
+      },
+      "npm:react@0.14.6": {
+        "dependencies": {
+          "fbjs": "^0.6.1"
+        },
+        "format": "cjs",
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          }
+        },
+        "map": {
+          "fbjs/lib/ExecutionEnvironment.js": {
+            "production": "@empty"
+          },
+          "./lib/ReactDefaultPerf.js": {
+            "production": "@empty"
+          },
+          "./lib/ReactTestUtils.js": {
+            "production": "@empty"
+          }
+        }
+      },
+      "npm:reflect-metadata@0.1.1": {
+        "map": {
+          "crypto": "@empty"
+        }
+      },
+      "npm:reflect-metadata@0.1.2": {
+        "map": {
+          "crypto": "@empty"
+        }
+      }
     }
   }
 }

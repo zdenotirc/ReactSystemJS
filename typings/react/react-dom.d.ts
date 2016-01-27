@@ -3,7 +3,7 @@
 // Definitions by: Asana <https://asana.com>, AssureSign <http://www.assuresign.com>, Microsoft <https://microsoft.com>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/// <reference path="../react/react.d.ts" />
+/// <reference path="react.d.ts" />
 
 declare namespace __React {
     namespace __DOM {
