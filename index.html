@@ -5,12 +5,26 @@
     <script src="jspm_packages/system.src.js"></script>
     <script src="jspm.browser.js"></script>
     <script src="jspm.config.js"></script>
+    <script src="https://cdn.polyfill.io/v1/polyfill.min.js?features=Intl.~locale.en"></script>
 </head>
 
 <body>
     <div id="app"></div>
     <script>
-        System.import('app')
+        var readyForMainLoad;
+
+        if (location.origin.match(/localhost/)) {
+            System.trace = true
+            readyForMainLoad = System.import('systemjs-hot-reloader').then(function(HotReloader){
+                hr = new HotReloader.default('http://localhost:3000');
+            })
+        }
+        
+        Promise.resolve(readyForMainLoad).then(() => {
+            System.import('app').then(function () {
+                console.log('ran at ', new Date());
+            });
+        });
     </script>
 </body>
 
