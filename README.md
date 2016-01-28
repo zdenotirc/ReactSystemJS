@@ -1,4 +1,4 @@
-# SystemJS + React + jspm + Typescript
+# SystemJS + React + jspm + Typescript + HotReload
 
 Simple demo project using React + Typescript + ES6 + SystemJS
 
@@ -8,11 +8,15 @@ Technologies:
 - ES6 Modules via SystemJS
 - Typescript (*.tsx files)
 - jspm
+- Systemjs-hot-reloader
 
 ### Install & Run example
 
-1. Install jspm package manager `npm install -g jspm`
-2. Install http-server `npm install -g http-server`
-3. Goto `cd ReactSystemJS` and run `jspm install`
-4. Start http-server `http-server .`
-2. Browse to `http://127.0.0.1:8080/index.html`
+1. Install jspm package manager: `npm install -g jspm`
+
+2. Goto: `cd ReactSystemJS`
+     - run: `npm install`
+     - run: `jspm install`
+
+3. Start app: `npm start`
+2. Browse to: `http://localhost:3000/index.html`
