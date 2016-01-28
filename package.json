@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "node server",
-        "build": "jspm bundle app app.bundle.js --minify"
+        "build": "jspm bundle app ./build/app.bundle.js --minify"
     },
     "devDependencies": {
         "chokidar-socket-emitter": "^0.4.2",
