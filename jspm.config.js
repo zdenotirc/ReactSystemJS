@@ -5,13 +5,13 @@ SystemJS.config({
         "github:*/*.json"
     ],
     "globalEvaluationScope": false,
-    "transpiler": "typescript",
+    "transpiler": "ts",
     "typescriptOptions": {
-        typeCheck: true,
-        tsconfig: true
+        "typeCheck": true,
+        "tsconfig": true
     },
     "packages": {
-        app: {
+        "app": {
             "main": "main.tsx",
             "defaultExtension": "tsx",
             "modules": {
@@ -30,14 +30,14 @@ SystemJS.config({
                 "weakee": "npm:weakee@1.0.0"
             }
         },
-        "github:frankwallis/plugin-typescript@2.5.3": {
+        "github:frankwallis/plugin-typescript@2.6.0": {
             "map": {
                 "typescript": "npm:typescript@1.7.5"
             }
         },
         "github:jspm/nodelibs-buffer@0.2.0-alpha": {
             "map": {
-                "buffer-browserify": "npm:buffer@4.3.1"
+                "buffer-browserify": "npm:buffer@4.4.0"
             }
         },
         "github:jspm/nodelibs-crypto@0.2.0-alpha": {
@@ -132,9 +132,9 @@ SystemJS.config({
                 "parse-asn1": "npm:parse-asn1@5.0.0"
             }
         },
-        "npm:buffer@4.3.1": {
+        "npm:buffer@4.4.0": {
             "map": {
-                "base64-js": "npm:base64-js@1.0.2",
+                "base64-js": "npm:base64-js@1.0.4",
                 "ieee754": "npm:ieee754@1.1.6",
                 "isarray": "npm:isarray@1.0.0"
             }
@@ -305,35 +305,35 @@ SystemJS.config({
         }
     },
     "map": {
-        angular2: "npm:angular2@2.0.0-alpha.44",
-        assert: "github:jspm/nodelibs-assert@0.2.0-alpha",
-        buffer: "github:jspm/nodelibs-buffer@0.2.0-alpha",
-        child_process: "github:jspm/nodelibs-child_process@0.2.0-alpha",
-        constants: "github:jspm/nodelibs-constants@0.2.0-alpha",
-        crypto: "github:jspm/nodelibs-crypto@0.2.0-alpha",
-        domain: "github:jspm/nodelibs-domain@0.2.0-alpha",
-        events: "github:jspm/nodelibs-events@0.2.0-alpha",
-        fs: "github:jspm/nodelibs-fs@0.2.0-alpha",
-        http: "github:jspm/nodelibs-http@0.2.0-alpha",
-        https: "github:jspm/nodelibs-https@0.2.0-alpha",
-        module: "github:jspm/nodelibs-module@0.2.0-alpha",
-        net: "github:jspm/nodelibs-net@0.2.0-alpha",
-        os: "github:jspm/nodelibs-os@0.2.0-alpha",
-        path: "github:jspm/nodelibs-path@0.2.0-alpha",
-        process: "github:jspm/nodelibs-process@0.2.0-alpha",
-        react: "npm:react@0.14.6",
+        "angular2": "npm:angular2@2.0.0-alpha.44",
+        "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
+        "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
+        "child_process": "github:jspm/nodelibs-child_process@0.2.0-alpha",
+        "constants": "github:jspm/nodelibs-constants@0.2.0-alpha",
+        "crypto": "github:jspm/nodelibs-crypto@0.2.0-alpha",
+        "domain": "github:jspm/nodelibs-domain@0.2.0-alpha",
+        "events": "github:jspm/nodelibs-events@0.2.0-alpha",
+        "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
+        "http": "github:jspm/nodelibs-http@0.2.0-alpha",
+        "https": "github:jspm/nodelibs-https@0.2.0-alpha",
+        "module": "github:jspm/nodelibs-module@0.2.0-alpha",
+        "net": "github:jspm/nodelibs-net@0.2.0-alpha",
+        "os": "github:jspm/nodelibs-os@0.2.0-alpha",
+        "path": "github:jspm/nodelibs-path@0.2.0-alpha",
+        "process": "github:jspm/nodelibs-process@0.2.0-alpha",
+        "react": "npm:react@0.14.6",
         "react-dom": "npm:react-dom@0.14.6",
-        readline: "github:jspm/nodelibs-readline@0.2.0-alpha",
+        "readline": "github:jspm/nodelibs-readline@0.2.0-alpha",
         "reflect-metadata": "npm:reflect-metadata@0.1.2",
-        stream: "github:jspm/nodelibs-stream@0.2.0-alpha",
-        string_decoder: "github:jspm/nodelibs-string_decoder@0.2.0-alpha",
+        "stream": "github:jspm/nodelibs-stream@0.2.0-alpha",
+        "string_decoder": "github:jspm/nodelibs-string_decoder@0.2.0-alpha",
         "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.5",
-        ts: "github:frankwallis/plugin-typescript@2.5.3",
-        tty: "github:jspm/nodelibs-tty@0.2.0-alpha",
-        typescript: "npm:typescript@1.7.5",
-        url: "github:jspm/nodelibs-url@0.2.0-alpha",
-        util: "github:jspm/nodelibs-util@0.2.0-alpha",
-        vm: "github:jspm/nodelibs-vm@0.2.0-alpha",
+        "ts": "github:frankwallis/plugin-typescript@2.6.0",
+        "tty": "github:jspm/nodelibs-tty@0.2.0-alpha",
+        "typescript": "npm:typescript@1.8.0",
+        "url": "github:jspm/nodelibs-url@0.2.0-alpha",
+        "util": "github:jspm/nodelibs-util@0.2.0-alpha",
+        "vm": "github:jspm/nodelibs-vm@0.2.0-alpha",
         "zone.js": "npm:zone.js@0.5.8"
     }
 });
