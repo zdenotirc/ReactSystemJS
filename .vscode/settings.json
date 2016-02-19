@@ -1,4 +1,4 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "typescript.tsdk": null
+    "typescript.tsdk": "./jspm_packages/npm/typescript@1.7.5/lib"
 }
