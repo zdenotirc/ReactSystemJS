@@ -6,8 +6,8 @@ import Header from './common/header';
 import About from './about/aboutPage';
 
 class Home extends React.Component<any, any> {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <Header />
                 <h1>React, SystemJS, jspm, Typescript, ES6</h1>
